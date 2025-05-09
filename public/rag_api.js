@@ -1,5 +1,5 @@
 let collectionKey = null;
-const ragApiUrl = 'http://localhost:500/'; //colocar a url de prod aqui
+const ragApiUrl = 'http://localhost:5000/'; //colocar a url de prod aqui
 function handleFileName() {
     const fileInput = document.getElementById('pdfFile');
     const fileName = document.getElementById('fileName');
