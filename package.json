@@ -1,0 +1,28 @@
+{
+  "name": "rag-server",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.42",
+    "@langchain/core": "^0.3.53",
+    "aws-sdk": "^2.1692.0",
+    "busboy": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fetch-blob": "^4.0.0",
+    "langchain": "^0.3.24",
+    "multer": "^1.4.5-lts.2",
+    "pdf-parse": "^1.1.1",
+    "serverless": "^4.14.3",
+    "serverless-http": "^3.2.0",
+    "weaviate-client": "^3.5.3"
+  },
+  "devDependencies": {
+    "serverless-cloudfront-invalidate": "^1.12.2",
+    "serverless-offline": "^14.4.0",
+    "serverless-s3-sync": "^3.4.0"
+  },
+  "scripts": {
+    "start": "serverless offline start"
+  }
+}

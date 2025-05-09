@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rag Sample Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="rag_api.js"></script>
+</head>
+<body>
+
+  <div class="chat-container" id="chatOutput">
+  </div>
+
+  <div class="chat-input-container">
+    <label class="upload-btn">
+      +
+      <input type="file" id="pdfFile" accept="application/pdf" onchange="handleFileName()" />
+    </label>
+
+    <span class="file-name" id="fileName">Nenhum arquivo</span>
+
+    <input
+      type="text"
+      id="questionInput"
+      placeholder="Digite sua pergunta..."
+      onkeydown="if(event.key === 'Enter') sendQuestion()"
+    />
+
+    <button class="send-btn" onclick="sendQuestion()">➤</button>
+  </div>
+</body>
+</html>
